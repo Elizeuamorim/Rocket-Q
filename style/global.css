@@ -18,6 +18,7 @@ html{
     --grey-blue: #A1B2CD;
     --grey-medium: #D3D9E2;
     --grey-light: #E5EAF1;
+    --grey-medium: #eaecf2;
     --hover-blue: #5699FF;
     --hover-red: #EA4B65;
     --hover-red: #8794A7;
@@ -62,7 +63,7 @@ input, button, .button {
 }
 
 button, .button{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-weight: 500;
     line-height: 0;
     display: flex;
@@ -77,7 +78,7 @@ button:hover, .button:hover{
     filter: brightness(1.2);
     
 }
-button > img
+button > img,
 .button > img{
     margin-right: 1rem;
     width: 2rem; 
@@ -88,6 +89,32 @@ button.outlined, .button.outlined{
     color: var(--blue);
     border: .2rem solid var(--blue)
 }
+
+button.red,
+.button.red{
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey{
+    background: var(--grey-light);
+    color: var(--grey-dark);
+}
+
+button.red,
+.button.red{
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey{
+    background: var(--grey-light);
+    color: var(--grey);
+}
+
+/*    HEADER   */
 
 .content header{
     width: 80%;
